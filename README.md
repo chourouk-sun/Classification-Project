@@ -1,48 +1,37 @@
-https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews?utm_source=chatgpt.com 
-
-# Classification-Project
-
-3️⃣ Write a professional README.md
-
-Include:
-
-Project title
-
-Project overview
-
-Dataset description
-
-Methodology (preprocessing, TF-IDF, model)
-
-Results / Accuracy
-
-How to run (install packages, run notebook)
-
-Future improvements
-
-Example snippet:
-
 # Sentiment Analysis on IMDB Movie Reviews
 
-## Overview
-This project builds a machine learning model to classify IMDB movie reviews as positive or negative using TF-IDF and Logistic Regression.
+## Overview 
+This project aims to build a machine learning model that classifies IMDB movie reviews as **positive** or **negative**. It leverages **TF-IDF vectorization** and **Logistic Regression** to analyze textual data and predict sentiment.
 
 ## Dataset
-- 50,000 movie reviews
-- Balanced classes: positive / negative
-- Source: Kaggle
+* **Source:** [Kaggle IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews?utm_source=chatgpt.com)
+* **Size:** 50,000 movie reviews
+* **Classes:** Balanced dataset with **positive** and **negative** reviews
 
 ## Methodology
-1. Text cleaning & preprocessing
-2. TF-IDF vectorization
-3. Logistic Regression training
-4. Evaluation using accuracy, classification report, and confusion matrix
+1. **Data Preprocessing**
+   * Text cleaning (removing punctuation, stopwords, lowercase conversion)
+   * Tokenization
+2. **Feature Extraction**
+   * TF-IDF vectorization of movie reviews
+3. **Model Training**
+   * Logistic Regression classifier
+   * Train-test split for evaluation
+4. **Evaluation**
+   * Accuracy score
+   * Classification report
+   * Confusion matrix
 
 ## Results
-- Accuracy: ~88-90%
-- Top positive words: amazing, excellent, perfect
-- Top negative words: boring, worst, awful
+* **Accuracy:** ~88-90%
+* **Top Positive Words:** amazing, excellent, perfect
+* **Top Negative Words:** boring, worst, awful
 
-## How to Run
-1. Install required packages: `pip install -r requirements.txt`
-2. Open `notebook/sentiment_analysis.ipynb` and run all cells
+## Future Improvements
+* Experiment with advanced models such as **Random Forest**, **XGBoost**, or **BERT**
+* Handle **imbalanced datasets** with techniques like SMOTE
+* Perform **hyperparameter tuning** for improved accuracy
+* Deploy the model as a **web app** for live predictions
+
+
+`notebook/sentiment_analysis.ipynb` and run all cells
